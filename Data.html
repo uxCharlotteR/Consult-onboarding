@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consult Header</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+
+    <!-- Left: brand + breadcrumb -->
+    <div class="header-left">
+
+      <a href="#" class="brand">
+        <img src="Images/consult.svg" alt="Consult logo" class="brand-icon" />
+        <span class="brand-name">Consult</span>
+      </a>
+      <div class="divider"></div>
+
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <span class="breadcrumb-page">AI safety and governance framework 2024</span>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Onboard</span>
+      </nav>
+
+    </div>
+
+    <!-- Right: nav links + avatar -->
+    <div class="header-right">
+
+      <a href="#" class="nav-link">Process</a>
+
+      <button class="nav-link" aria-haspopup="true">
+        Support
+        <svg class="chevron" viewBox="0 0 16 16">
+          <polyline points="4 6 8 10 12 6"/>
+        </svg>
+      </button>
+
+      <button class="nav-link" aria-haspopup="true">
+        Manage
+        <svg class="chevron" viewBox="0 0 16 16">
+          <polyline points="4 6 8 10 12 6"/>
+        </svg>
+      </button>
+
+      <div class="avatar" role="button" aria-label="User account" tabindex="0">
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-7 8a7 7 0 1114 0H3z"/>
+        </svg>
+      </div>
+
+    </div>
+
+  </header>
+  <main class="main">
+    <div class="container">
+    <article class="help-page">
+ 
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          Consult <span>›</span> Getting started <span>›</span> Setting up your data
+        </nav>
+       
+        <!-- Page title -->
+        <h1>Setting up your data in Consult</h1>
+       
+        <p class="intro">
+          Data setup is the first step in using Consult to analyse your consultation. It's where you tell us how your data should appear in the dashboard when you analyse it later. Make sure you set aside time for this step — you'll need to review your data and confirm you're happy with it before we can generate themes.
+        </p>
+       
+        <hr class="section-divider">
+       
+       
+        <!-- Section 1 -->
+        <section>
+            <div class="step-header">
+                <div class="number-circle">1</div>
+                <h2>Prepare your data for upload</h2>
+              </div>
+          <div class="section-text">
+            <p>Before you send us anything, you need to clean up the data you've exported from your survey tool. Download your responses and remove any personal information you don't want to send — things like email addresses or names.</p>
+            <p>If you have additional responses to include (from emails or other channels), add them to the bottom of the spreadsheet. Don't leave any blank rows or columns when you do this, as that will cause problems during upload.</p>
+          </div>
+       
+          <div class="gif-container">
+            <img src="/Images/spreadsheet-animation.gif" alt="Removing email and name columns, then adding three email responses to the bottom of the sheet" /></div>
+            <p class="caption">Here we're removing the email address and name columns from the exported data, then adding three email responses to the bottom of the sheet. Notice there are no blank rows between the original data and the new responses.</p>
+        </section>
+       
+        <hr class="section-divider">
+       
+       
+        <!-- Section 2 -->
+        <section>
+            <div class="step-header">
+                <div class="number-circle">2</div>
+          <h2>Understand the four data types</h2>
+          </div>
+          <div class="section-text">
+            <p>Consult classifies your consultation data into four types. Understanding these matters because each type appears differently in the dashboard and serves a different purpose in your analysis.</p>
+            <ul>
+              <li><strong>Demographic questions</strong> have a defined list of responses and are used to filter across all questions in the dashboard. These appear in the left-hand filter panel.</li>
+              <li><strong>Multiple-choice questions</strong> also have a defined list of responses, but they aren't used as filters and aren't attached to any open questions. These appear at the top of a question view.</li>
+              <li><strong>Open questions</strong> have free-text responses and are where Consult identifies themes. These appear at the bottom of a question view.</li>
+              <li><strong>Hybrid questions</strong> combine a multiple-choice part and an open-text part. You want these connected in the dashboard so you can see both the selected option and the free-text explanation together.</li>
+            </ul>
+          </div>
+       
+          <div class="gif-container">
+            <img src="/Images/dashboard-filter-animation.gif" alt="Illustrated Consult interface showing a consultation form" /></div>
+          <p class="caption">Demographic questions power the filter panel on the left. Multiple-choice responses sit at the top of a question view, open-text responses at the bottom. Hybrid questions show both parts together.</p>
+        </section>
+       
+        <hr class="section-divider">
+       
+       
+        <!-- Section 3 -->
+        <section>
+            <div class="step-header">
+                <div class="number-circle">3</div>
+          <h2>Fill in the Question Understanding Template</h2>
+          </div>
+          <div class="section-text">
+            <p>The Consult team will share a Question Understanding Template with you. This spreadsheet is how you tell us which columns in your data map to which data types in the dashboard.</p>
+            <p>Your exported data will have columns across the top in Excel — the template is where you explain what each column contains. The template has four tabs, one for each data type.</p>
+          </div>
+       
+          <div class="gif-container">
+            <div class="gif-placeholder">Overview of the Question Understanding Template showing all four tabs and how they relate to the exported data columns</div>
+          </div>
+          <p class="caption">The template has a tab for each data type. You'll work through each one, mapping columns from your exported data to how they should appear in Consult.</p>
+        </section>
+       
+        <hr class="section-divider">
+       
+       
+        <!-- Section 4 -->
+        <section>
+            <div class="step-header">
+                <div class="number-circle">4</div>
+          <h2>Map your demographic questions</h2>
+          </div>
+          <div class="section-text">
+            <p>On the Demographics tab, fill in which column in your spreadsheet contains each demographic question, and give it a short title. This title is what will appear in the dashboard filter panel.</p>
+          </div>
+       
+          <div class="gif-container">
+            <div class="gif-placeholder">Filling in the Demographics tab — entering a column reference and a short dashboard title, then deleting the example row</div>
+          </div>
+          <p class="caption">For each demographic question, enter the column letter from your data and a short title for the dashboard. Delete the example row before sending.</p>
+       
+          <div class="callout">
+            <strong>Remember:</strong> Delete the example row before you send the template to us.
+          </div>
+        </section>
+       
+        <hr class="section-divider">
+       
+       
+        <!-- Section 5 -->
+        <section>
+            <div class="step-header">
+                <div class="number-circle">5</div>
+          <h2>Map your multiple-choice questions</h2>
+          </div>
+          <div class="section-text">
+            <p>The Multiple-choice tab works similarly, but here you also assign each question a number. Use the number that makes sense to you when you think about the order you'd analyse your questions — this is the number that will appear in Consult.</p>
+          </div>
+       
+          <div class="gif-container">
+            <div class="gif-placeholder">Filling in the Multiple-choice tab — entering column reference, question number, and title</div>
+          </div>
+          <p class="caption">As well as the column and title, you assign each multiple-choice question a number. This controls the order it appears in Consult.</p>
+        </section>
+       
+        <hr class="section-divider">
+       
+       
+        <!-- Section 6 -->
+        <section>
+            <div class="step-header">
+                <div class="number-circle">6</div>
+          <h2>Map your open questions</h2>
+          </div>
+          <div class="section-text">
+            <p>Open questions work the same way, with one important difference: the title you enter here is sent directly to the AI to help it identify themes. So don't just write a shorthand label — include the full question that was asked in your consultation. The AI needs that context to do its work well.</p>
+          </div>
+       
+          <div class="gif-container">
+            <div class="gif-placeholder">Filling in the Open questions tab, showing the difference between a bad title ("Why?") and a good title that includes the full question context</div>
+          </div>
+          <p class="caption">The title for open questions is sent to the AI. A vague title like "Why?" won't give the AI enough context. Use the full question, like "Why do you agree or disagree with the proposed changes to licensing requirements?"</p>
+       
+          <div class="callout">
+            <strong>This matters for AI quality:</strong> The title you write here is what the AI uses to understand the question. Always use the full question text, not a shorthand label.
+          </div>
+        </section>
+       
+        <hr class="section-divider">
+       
+       
+        <!-- Section 7 -->
+        <section>
+            <div class="step-header">
+                <div class="number-circle">7</div>
+          <h2>Map your hybrid questions</h2>
+          </div>
+          <div class="section-text">
+            <p>Hybrid questions have both a multiple-choice and an open-text component, and you want them linked in the dashboard. On this tab, you'll enter the column for the open-text part, the question number, the title as you want it to appear, and the column ID of the multiple-choice part. This lets Consult combine them so they appear together.</p>
+          </div>
+       
+          <div class="gif-container">
+            <div class="gif-placeholder">Filling in the Hybrid tab — showing the open column, question number, title, and the closed/multiple-choice column ID being linked</div>
+          </div>
+          <p class="caption">For hybrid questions, you map both the open-text column and the multiple-choice column so Consult can connect them in the dashboard.</p>
+        </section>
+       
+        <hr class="section-divider">
+       
+       
+        <!-- Section 8 -->
+        <section>
+            <div class="step-header">
+                <div class="number-circle">8</div>
+          <h2>Review your data in the dashboard</h2>
+          </div>
+          <div class="section-text">
+            <p>Once you've sent us your raw data and completed template, we'll load it into Consult and email you to review it. You'll get access to a live version of the dashboard with your data — but without themes at this stage. Take the time to check everything carefully before confirming, because changes after this point will require a fresh data upload.</p>
+            <p>Check the following:</p>
+            <ul class="review-checklist">
+              <li><strong>Demographic questions</strong> — Are all the demographic filters showing? Are responses appearing correctly, or has a response been split across two rows (for example, because of a typo creating a duplicate)?</li>
+              <li><strong>Multiple-choice questions</strong> — Is each question correct? Are all the response options present and accurate?</li>
+              <li><strong>All expected questions</strong> — Has every question you're expecting appeared in the dashboard?</li>
+              <li><strong>Response data</strong> — Go to the Response Analysis tab to confirm you can see the actual responses for each question.</li>
+            </ul>
+            <p>If anything isn't right, correct it in your data, let us know what you've changed, and we'll re-upload it.</p>
+          </div>
+       
+          <div class="gif-container">
+            <img src="/Images/dashboard-filter-animation.gif" alt="Walking through the review checklist in the live dashboard — checking demographic filters, multiple-choice options, verifying all questions are present, and viewing the Response Analysis tab" /></div>
+          <p class="caption">Check demographic filters for duplicates or splits, verify multiple-choice options, confirm all your questions appear, and preview responses in the Response Analysis tab. At this stage there won't be any themes yet.</p>
+        </section>
+       
+        <hr class="section-divider">
+       
+       
+        <!-- Section 9 -->
+        <section>
+            <div class="step-header">
+                <div class="number-circle">9</div>
+                </div>
+          <h2>Confirm your data is correct</h2>
+          <div class="section-text">
+            <p>Once you're satisfied that everything in the dashboard matches your consultation data, let the team know so they can proceed with generating themes.</p>
+          </div>
+       
+          <div class="confirm-box">
+            <p>Email <a href="mailto:consult@cabinetoffice.gov.uk">consult@cabinetoffice.gov.uk</a> to confirm your data is ready.</p>
+          </div>
+        </section>
+       
+      </article>
+    </div>
+      </main>
+
+</body>
+</html>

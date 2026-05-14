@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consult Header</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+
+    <!-- Left: brand + breadcrumb -->
+    <div class="header-left">
+
+      <a href="#" class="brand">
+        <img src="Images/consult.svg" alt="Consult logo" class="brand-icon" />
+        <span class="brand-name">Consult</span>
+      </a>
+      <div class="divider"></div>
+
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <span class="breadcrumb-page">AI safety and governance framework 2027</span>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Onboard</span>
+      </nav>
+
+    </div>
+
+    <!-- Right: nav links + avatar -->
+    <div class="header-right">
+
+      <a href="#" class="nav-link">Process</a>
+
+      <button class="nav-link" aria-haspopup="true">
+        Support
+        <svg class="chevron" viewBox="0 0 16 16">
+          <polyline points="4 6 8 10 12 6"/>
+        </svg>
+      </button>
+
+      <button class="nav-link" aria-haspopup="true">
+        Manage
+        <svg class="chevron" viewBox="0 0 16 16">
+          <polyline points="4 6 8 10 12 6"/>
+        </svg>
+      </button>
+
+      <div class="avatar" role="button" aria-label="User account" tabindex="0">
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-7 8a7 7 0 1114 0H3z"/>
+        </svg>
+      </div>
+
+    </div>
+
+  </header>
+  <main class="main">
+    <div class="container">
+  
+      <h1 class="page-title">Start setting up Consult</h1>
+      <p class="page-subtitle">Your demo account has been set up successfully.</p>
+  
+      <!-- Card 1: Overview -->
+      <div class="card">
+        <h2 class="card-title">Getting started: Overview</h2>
+        <ol class="overview-list">
+          <li>Invite your compliance/assurance team member using the email template below</li>
+          <li>Explore the guidance area to understand the process to set up Consult</li>
+          <li>Once the one-time setup and assurance process is complete, start using Consult</li>
+        </ol>
+      </div>
+  
+      <!-- Card 2: Invite team member -->
+      <div class="card">
+        <h2 class="card-title">Invite your assurance team member</h2>
+        <p class="card-body">Copy this email template to send to someone in your compliance, legal, or cybersecurity team.</p>
+        <p class="card-body">You can send it to multiple people.</p>
+        <div class="email-template-wrapper">
+          <div class="email-template-header">
+            <span class="email-template-label">Email template</span>
+            <button class="copy-btn" onclick="copyTemplate()">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="7" y="7" width="10" height="10" rx="2"/>
+                <path d="M3 13V5a2 2 0 012-2h8"/>
+              </svg>
+              Copy template
+            </button>
+          </div>
+          <pre class="email-template-body" id="emailTemplate">Subject: Invitation to review Consult demo for [Your Department]
+  
+Hi [Name],
+
+I've been exploring Consult, a new AI-powered tool from AI.GOV.UK that helps government departments analyse public consultation responses more efficiently.
+            
+To set up Consult for our department, we need to complete a one-time assurance process. I'd like to invite you to review the demo and help complete the necessary compliance, security, and legal checks.
+            
+Could you:
+1. Request demo access at: [Demo URL] using your government email address
+2. Review the demo environment and documentation
+            
+Once you've had a chance to explore, we can work together to complete the setup and assurance process.
+            
+Please let me know if you have any questions.
+            
+Best regards,
+[Your Name]
+</pre>
+        </div>
+        <button class="confirm-btn">
+          Confirm invitation sent
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 10h12M12 4l6 6-6 6"/>
+          </svg>
+        </button>
+      </div>
+  
+      <!-- Card 3: Info callout -->
+      <div class="card card-info">
+        <div class="info-icon">
+          <svg viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <div>
+          <p class="info-title">Who should you invite?</p>
+          <p class="info-body">Look for someone in your department's legal, cybersecurity, data protection, or compliance team who handles technology assurance processes.</p>
+        </div>
+      </div>
+  
+    </div>
+  </main>
+  
+  <script>
+    function copyTemplate() {
+      var text = document.getElementById('emailTemplate').innerText;
+      navigator.clipboard.writeText(text).then(function() {
+        var btn = document.querySelector('.copy-btn');
+        btn.textContent = '✓ Copied';
+        setTimeout(function() {
+          btn.innerHTML = '<svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="2"/><path d="M3 13V5a2 2 0 012-2h8"/></svg> Copy template';
+        }, 2000);
+      });
+    }
+  </script>
+
+</body>
+</html>
