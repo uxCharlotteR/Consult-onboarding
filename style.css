@@ -311,8 +311,8 @@
     display: flex;
     align-items: flex-start;
     gap: 14px;
-    background: #f0fdfa;
-    border-color: #99f6e4;
+    background: #FCE4EC;
+    border-color: #c0257f;
   }
   
   .info-icon {
@@ -340,7 +340,7 @@
   }
 
   .help-page {
-    max-width: 720px;
+    max-width: 840px;
     margin: 0 auto;
     padding: 40px 24px 80px;
     font-family: 'DM Sans', 'Segoe UI', sans-serif;
@@ -361,6 +361,10 @@
     margin: 0 6px;
   }
  
+ .indent {
+  padding-left: 30px;
+}
+
   .help-page h1 {
     font-size: 36px;
     font-weight: 700;
@@ -537,8 +541,8 @@
   }
 
   .help-page .callout {
-    background-color: #F0FDFA;
-    border-left: 3px solid #0D9488;
+    background-color: #FCE4EC;
+    border-left: 3px solid #c0257f;
     padding: 16px 20px;
     margin: 24px 0;
     border-radius: 0 6px 6px 0;
@@ -548,7 +552,7 @@
   }
  
   .help-page .callout strong {
-    color: #0F766E;
+    color: #c0257f;
   }
  
   .help-page .confirm-box {
@@ -572,6 +576,29 @@
     border-bottom-color: #0F766E;
   }
  
+  .bullet-list {
+    margin: 16px 0;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .bullet-list li,
+  .help-page .section-text .bullet-list li {
+    padding: 6px 0 6px 20px;
+    position: relative;
+  }
+
+  .bullet-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 1em;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #0D9488;
+  }
+
   .help-page .review-checklist {
     margin: 16px 0;
     padding-left: 0;
