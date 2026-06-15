@@ -167,7 +167,7 @@
   }
   
   .container {
-    max-width: 700px;
+    max-width: 1200px;
     margin: 0 auto;
   }
   
@@ -373,7 +373,7 @@
   .help-page .intro {
     font-size: 26px;
     color: #374151;
-    line-height: 1.25;
+    line-height: 1.5;
     margin-bottom: 20px;
     font-family: 'Plus Jakarta Sans', arial, sans-serif;
   }
@@ -414,7 +414,23 @@
   .help-page .section-divider {
     border: none;
     border-top: 1px solid #E5E7EB;
-    margin: 48px 0;
+    margin: 42px 0 42px 0;
+  }
+
+  .back-to-top {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+    color: #6B7280;
+    text-decoration: none;
+    margin-left: auto;
+    width: fit-content;
+  }
+
+  .back-to-top:hover {
+    color: #c0257f;
+    text-decoration: underline;
   }
  
   .help-page h2 {
@@ -445,26 +461,16 @@
   }
  
   .help-page .section-text ul {
-    margin: 12px 0;
+    margin: 24px 0;
     padding-left: 0;
     list-style: none;
   }
  
   .help-page .section-text ul li {
-    padding: 8px 0 8px 20px;
+    padding: 2px 0 2px 0px;
     position: relative;
   }
  
-  .help-page .section-text ul li::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 18px;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: #0D9488;
-  }
  
   .help-page .section-text strong {
     font-weight: 600;
