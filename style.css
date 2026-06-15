@@ -311,7 +311,7 @@
     display: flex;
     align-items: flex-start;
     gap: 14px;
-    background: #FCE4EC;
+    background: #faf1f4;
     border-color: #c0257f;
   }
   
@@ -541,18 +541,18 @@
   }
 
   .help-page .callout {
-    background-color: #FCE4EC;
+    background-color: #faf1f4;
     border-left: 3px solid #c0257f;
     padding: 16px 20px;
     margin: 24px 0;
     border-radius: 0 6px 6px 0;
     font-size: 15px;
-    color: #c0257f;
+    color: #111827;
     line-height: 1.6;
   }
  
   .help-page .callout strong {
-    color: #c0257f;
+    color: #111827;
   }
  
   .help-page .confirm-box {
@@ -624,7 +624,7 @@
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    background-color: #FCE4EC;
+    background-color: #faf1f4;
     color: #E91E63;
     display: flex;
     align-items: center;
