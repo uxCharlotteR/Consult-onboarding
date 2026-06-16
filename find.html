@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consult Header</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="test-banner">
+    This is a test site — information displayed may not be accurate.
+  </div>
+
+  <header class="header">
+
+    <!-- Left: brand + breadcrumb -->
+    <div class="header-left">
+
+      <a href="#" class="brand">
+        <img src="images/consult.svg" alt="Consult logo" class="brand-icon" />
+        <span class="brand-name">Consult</span>
+      </a>
+      <div class="divider"></div>
+
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <span class="breadcrumb-page">Example Consultation 2026</span>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Onboard</span>
+      </nav>
+
+    </div>
+
+    <!-- Right: nav links + avatar -->
+    <div class="header-right">
+
+      <a href="#" class="nav-link">Process</a>
+
+      <button class="nav-link" aria-haspopup="true">
+        Support
+        <svg class="chevron" viewBox="0 0 16 16">
+          <polyline points="4 6 8 10 12 6"/>
+        </svg>
+      </button>
+
+      <button class="nav-link" aria-haspopup="true">
+        Manage
+        <svg class="chevron" viewBox="0 0 16 16">
+          <polyline points="4 6 8 10 12 6"/>
+        </svg>
+      </button>
+
+      <div class="avatar" role="button" aria-label="User account" tabindex="0">
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-7 8a7 7 0 1114 0H3z"/>
+        </svg>
+      </div>
+
+    </div>
+
+  </header>
+  <main class="main">
+    <div class="container">
+    <article class="help-page">
+ 
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          Consult <span>›</span> <a href="index.html" class="breadcrumb-page">Get started </a>  <span>›</span> <a href="index.html" class="breadcrumb-current">Find themes</a> 
+        </nav>
+       
+        <!-- Page title -->
+        <h1>Find themes in your responses</h1>
+       
+        <p class="intro">
+          Consult uses artificial intelligence (AI) to review data from open questions and suggest themes.</p>
+       <p class="section-text">
+        Your team can then review, update and select which themes you will use in the final analysis.</p>
+        <h3>How AI builds themes</h3>
+        <p class="section-text"> The AI builds themes in 4 stages, it:</p>
+    <ul class="bullet-list">
+      <li>reviews all responses and creates initial themes</li>
+      <li>reviews the list of themes and removes duplicates</li>
+      <li>reviews the wording to make them easier to understand</li>
+      <li>sorts themes into parent and child themes (where needed)
+      </li>
+    </ul>
+    <p class="callout">
+      This takes up to 48 hours, depending on the number of responses in your consultation. We will email you when the themes are ready for review.</p>
+ </div></section>
+      </article>
+
+      <div class="feedback-block">
+        <div class="feedback-prompt">
+          <span class="feedback-label">Was this helpful?</span>
+          <div class="feedback-buttons">
+            <button class="feedback-btn" id="btn-helpful" onclick="showFeedback('helpful')">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 10V17M3 11v5a1 1 0 001 1h10.17a2 2 0 001.94-1.515l1.4-5.6A2 2 0 0015.571 8H12V5a2 2 0 00-2-2h-.5a.5.5 0 00-.5.5V6L7 10z"/>
+              </svg>
+              It's helpful
+            </button>
+            <button class="feedback-btn" id="btn-missing" onclick="showFeedback('missing')">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 6h14M3 10h9"/>
+                <path d="M13 14.5l1.5-4.5 1.5 4.5M13.5 13h3"/>
+              </svg>
+              Something's missing
+            </button>
+          </div>
+        </div>
+
+        <div class="feedback-expanded" id="feedback-expanded" style="display:none">
+          <p class="feedback-question" id="feedback-question"></p>
+          <textarea class="feedback-textarea" id="feedback-textarea" rows="3"></textarea>
+          <button class="feedback-send" onclick="sendFeedback()">Send feedback</button>
+        </div>
+
+        <div class="feedback-thanks" id="feedback-thanks" style="display:none">
+          <span>Thanks for your feedback.</span>
+        </div>
+      </div>
+
+    </div>
+      </main>
+
+  <script>
+    function showFeedback(type) {
+      var q = document.getElementById('feedback-question');
+      var ta = document.getElementById('feedback-textarea');
+
+      document.getElementById('btn-helpful').classList.toggle('feedback-btn--active', type === 'helpful');
+      document.getElementById('btn-missing').classList.toggle('feedback-btn--active', type === 'missing');
+
+      if (type === 'helpful') {
+        q.textContent = "What's been the most useful part?";
+        ta.placeholder = 'eg the animations made it easy to relate to the tool...';
+      } else {
+        q.textContent = "What's missing or unclear? What would have helped you?";
+        ta.placeholder = 'eg step 2 missed out the part about...';
+      }
+
+      document.getElementById('feedback-expanded').style.display = 'flex';
+      document.getElementById('feedback-thanks').style.display = 'none';
+      ta.value = '';
+    }
+
+    function sendFeedback() {
+      document.getElementById('feedback-expanded').style.display = 'none';
+      document.getElementById('feedback-thanks').style.display = 'block';
+      document.getElementById('btn-helpful').classList.remove('feedback-btn--active');
+      document.getElementById('btn-missing').classList.remove('feedback-btn--active');
+    }
+  </script>
+
+</body>
+</html>
