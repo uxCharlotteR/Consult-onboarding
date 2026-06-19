@@ -904,3 +904,9 @@
   color: #374151;
   line-height: 1.2;
 }
+
+/* ── Text links ── */
+.text-link {
+  color: #c0257f;
+  text-decoration: underline;
+}
