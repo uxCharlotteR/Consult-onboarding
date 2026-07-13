@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consult Header</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="test-banner">
+    This is a test site — information displayed may not be accurate.
+  </div>
+
+  <header class="header">
+
+    <!-- Left: brand + breadcrumb -->
+    <div class="header-left">
+
+      <a href="#" class="brand">
+        <img src="images/consult.svg" alt="Consult logo" class="brand-icon" />
+        <span class="brand-name">Consult</span>
+      </a>
+      <div class="divider"></div>
+
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <span class="breadcrumb-page">Example Consultation 2026</span>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Onboard</span>
+      </nav>
+
+    </div>
+
+    <!-- Right: nav links + avatar -->
+    <div class="header-right">
+
+      <a href="#" class="nav-link">Process</a>
+
+      <button class="nav-link" aria-haspopup="true">
+        Support
+        <svg class="chevron" viewBox="0 0 16 16">
+          <polyline points="4 6 8 10 12 6"/>
+        </svg>
+      </button>
+
+      <button class="nav-link" aria-haspopup="true">
+        Manage
+        <svg class="chevron" viewBox="0 0 16 16">
+          <polyline points="4 6 8 10 12 6"/>
+        </svg>
+      </button>
+
+      <div class="avatar" role="button" aria-label="User account" tabindex="0">
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-7 8a7 7 0 1114 0H3z"/>
+        </svg>
+      </div>
+
+    </div>
+
+  </header>
+  <main class="main">
+    <div class="container">
+    <article class="help-page">
+ 
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          Consult <span>›</span> <a href="index.html" class="breadcrumb-page">Get started </a>  <span>›</span> <a href="index.html" class="breadcrumb-current">Set up your data</a> 
+        </nav>
+       
+        <!-- Page title -->
+        <h1>Set up your data</h1>
+       
+        <p class="intro">
+          Preparing your data is the first phase in using Consult to analyse your consultation. It's where you tell us how your data should appear in the dashboard for when you analyse it later.  </p>
+          <p class="callout">You need to prepare your data so Consult can understand and process the data to align with how you’ll do your analysis.</p>
+            <p class="callout">Plan time for your team to discuss and agree how your data is structured as you complete the Data Template.
+        </p>
+       
+        <nav class="jump-to" aria-label="Jump to section">
+          <p class="jump-to-label">Jump to step</p>
+          <ol class="jump-to-list">
+            <li><span class="phase-header"><span class="number-circle-inline"> 1 </span> <a href="#section-1"><strong> Prepare your data for upload</strong></a></span></li>
+            <li><span class="phase-header"><span class="number-circle-inline"> 2 </span> <a href="#section-2"><strong> Understand the four data types</strong></a></span></li>
+            <li><span class="phase-header"><span class="number-circle-inline"> 3 </span> <a href="#section-3"><strong> Fill in the Data Template</strong></a></span></li>
+            <li><span class="phase-header"><span class="number-circle-inline">  </span> <a href="#section-3"><strong class="indent"> Map your demographic questions</strong></a></span></li>
+            <li><span class="phase-header"><span class="number-circle-inline">  </span> <a href="#section-3"><strong class="indent"> Map your multiple-choice questions</strong></a></span></li>
+            <li><span class="phase-header"><span class="number-circle-inline">  </span> <a href="#section-3"><strong class="indent"> Map your open questions</strong></a></span></li>
+            <li><span class="phase-header"><span class="number-circle-inline">  </span> <a href="#section-3"><strong class="indent"> Map your hybrid questions</strong></a></span></li>
+            <li><span class="phase-header"><span class="number-circle-inline"> 4 </span> <a href="#section-3"><strong> Review your data in the dashboard</strong></a></span></li>
+            <li><span class="phase-header"><span class="number-circle-inline"> 5 </span> <a href="#section-3"><strong> Confirm your data is correct</strong></a></span></li>
+          </ol>
+        </nav>
+
+        <hr class="section-divider">
+
+
+        <!-- Section 1 -->
+        <section id="section-1">
+            <div class="step-header">
+                <div class="number-circle">1</div>
+                <h2>Step 1: Prepare your data for upload</h2>
+              </div>
+          <div class="section-text">
+            <p>Before you send us anything, you need to clean up the data you've exported from your survey tool. Download your responses and remove any personal information you don't want to send — things like email addresses or names.</p>
+            <p>If you have additional responses to include (from emails or other channels), add them to the bottom of the spreadsheet. Don't leave any blank rows or columns when you do this, as that will cause problems during upload.</p>
+          </div>
+          <p class="callout">Plan adequate time and resource needed upfront to clean and format your data before filling in the Data Template in step 3.</p>
+
+          <div class="gif-container">
+            <img src="./images/setup-data-clean-export-1.gif" alt="Removing email and name columns, then adding three email responses to the bottom of the sheet" /></div>
+            <p class="caption">Here we're removing email addresses and name columns from the exported data, then adding three email responses to the bottom of the sheet. Notice there are no blank rows between the original data and the new responses.</p>
+        
+            <h3>Step 1 check:</h3>
+
+        <ul class="scope-list scope-list--does">
+            <li>
+              <svg class="scope-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#c0257f" stroke-width="1.5"/><polyline points="5,8.5 7,10.5 11,6" stroke="#c0257f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              You’ve added in any other response sources to create one data set (ie email submissions). Make sure response columns map to the relevant questions
+            </li>
+            <li>
+              <svg class="scope-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#c0257f" stroke-width="1.5"/><polyline points="5,8.5 7,10.5 11,6" stroke="#c0257f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Row 1 contains the question text ‘What are your views on x?’ and not a response or number.
+            </li>
+            <li>
+              <svg class="scope-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#c0257f" stroke-width="1.5"/><polyline points="5,8.5 7,10.5 11,6" stroke="#c0257f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              All Personally Identifiable Information (PII) has been removed or anonymised - names, email addresses, postcodes, phone numbers etc.            </li>
+            <li>
+              <svg class="scope-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#c0257f" stroke-width="1.5"/><polyline points="5,8.5 7,10.5 11,6" stroke="#c0257f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Each row represents one respondent’s full submission         
+             </li>
+             <li>
+              <svg class="scope-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#c0257f" stroke-width="1.5"/><polyline points="5,8.5 7,10.5 11,6" stroke="#c0257f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              There are no empty rows or columns
+            </li>
+            <li>
+              <svg class="scope-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#c0257f" stroke-width="1.5"/><polyline points="5,8.5 7,10.5 11,6" stroke="#c0257f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Each cell contains one piece of data - no merged cells
+            </li>
+            <li>
+              <svg class="scope-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#c0257f" stroke-width="1.5"/><polyline points="5,8.5 7,10.5 11,6" stroke="#c0257f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Formatting is consistent throughout the file  
+            </li>
+          </ul>
+         
+        
+          </section>
+          <a href="#top" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>Back to top</a>
+
+        <hr class="section-divider">
+       
+       
+        <!-- Section 2 -->
+        <section id="section-2">
+            <div class="step-header">
+                <div class="number-circle">2</div>
+          <h2>Step 2: Understand the four data types in the Data Template</h2>
+          </div>
+          <div class="section-text">
+            <p>Consult classifies your consultation data into four types. Understanding these matters because each type appears differently in the dashboard and serves a different purpose in your analysis.
+            </p></p>A completed Data Template will contain both your cleaned response data and how that data should be handled across the four types. It separates your data into the four different kinds of questions, which changes how they are analysed and presented by Consult. </p>
+           <p class="callout">You’ll need to map these question types at the next step. It’s helpful to understand the types as you’re preparing and familiarising yourself with your data.</p>
+           <ul class="bullet-list">
+              <li><strong>Demographic questions</strong> have a defined list of responses and are used to filter across all questions in the dashboard. These appear in the left-hand filter panel.</li>
+              <li><strong>Multiple-choice questions</strong> also have a defined list of responses, but they aren't used as filters and aren't attached to any open questions. These appear at the top of a question view.</li>
+              <li><strong>Open questions</strong> have free-text responses and are where Consult identifies themes. These appear at the bottom of a question view.</li>
+              <li><strong>Hybrid questions</strong> combine a multiple-choice part and an open-text part. You want these connected in the dashboard so you can filter by a selected option and see the free-text explanation alongside.</li>
+            </ul>
+          </div>
+       
+          <div class="gif-container">
+            <img src="images/setupdata_demographic.gif" alt="Illustrated Consult interface showing a demographic filter selected" /></div>
+          <p class="caption">Here we see Demographic questions populate the filter panel on the left. Then Multiple-choice responses sit at the top of a question view to filter by. </p> 
+        
+          <div class="gif-container">
+            <img src="images/setupdata_hybrid.gif" alt="Illustrated Consult interface showing a demographic filter selected" /></div>
+          <p class="caption">Here we see Open questions have their responses under the themes. Then Hybrid questions show both parts together in a question.</p> 
+        </section>
+        <a href="#top" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>Back to top</a>
+
+        <hr class="section-divider">
+       
+       
+        <!-- Section 3 -->
+        <section id="section-3">
+            <div class="step-header">
+                <div class="number-circle">3</div>
+          <h2>Step 3: Fill in the Data Template</h2>
+          </div>
+          <div class="section-text">
+            <p>The Consult team will share a Data Template with you, or download a blank version below. This spreadsheet is how you tell us which columns in your data map to which data types in the dashboard.</p></div>
+            <div>
+            <a href="files/consult_data_template_v005.xlsx" download class="download-btn">
+              <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M10 2a.75.75 0 01.75.75v8.69l2.47-2.47a.75.75 0 111.06 1.06l-3.75 3.75a.75.75 0 01-1.06 0L5.72 10.03a.75.75 0 111.06-1.06L9.25 11.44V2.75A.75.75 0 0110 2zM3 14.25a.75.75 0 011.5 0v1.5a.25.25 0 00.25.25h10.5a.25.25 0 00.25-.25v-1.5a.75.75 0 011.5 0v1.5A1.75 1.75 0 0115.25 17.5H4.75A1.75 1.75 0 013 15.75v-1.5z"/>
+              </svg>
+              Download blank Data Template
+            </a>
+          </div><br>
+            <p>The Data Template file has:
+              <ul class="bullet-list">
+              <li><strong>Guide sheet </strong>with instructions on how to complete it.</li>
+              <li><strong>Responses sheet </strong>to include your cleaned data in to reference.</li>
+              <li><strong>4 question type sheet </strong>, one for each question type. This is where you reference the data in the Responses sheet.</li>
+              <li><strong>Active Issues sheet </strong>where any issue or checks will show, with suggestions of what to fix before sending over your data.</li>
+            </ul>
+          </p>
+       
+          <div class="gif-container">
+            <img src="images/Consult_template.gif" alt="Overview of the Question Understanding Template showing all four tabs and how they relate to the exported data columns" /></div>
+          <p class="caption">Here we see the Data Template open, with a tab for each data type. Then we move through each tab, mapping columns from the exported data to how they should appear in Consult.</p>
+        <p class="callout">Work as a team - ideally with your Dept Owner - to clean your data and resolve issues the Data Template flags. Consult team are only able to advise on edge-case issues.</p>
+        </section>
+
+       
+        <!-- Section 4 -->
+        <section id="section-3">
+            <div class="step-header">
+          <h3>Map your demographic questions</h3>
+          </div>
+          <div class="section-text">
+            <p>On the Demographics tab, fill in which column in your spreadsheet contains each demographic question, and give it a short label. This label is what will appear in the dashboard filter panel.</p>
+          </div>
+       
+          <div class="gif-container">
+            <img src="images/consult_setup-data_demographic.gif" alt="Filling in the Demographics tab — entering a column reference and a short dashboard title, then deleting the example row" /></div>
+          <p class="caption">Here we see a column letter and a short dashboard title entered for a demographic question into the ‘Demographic’ sheet of the Data Template file. Then the example row is deleted before the template is sent.</p>
+       
+          <div class="callout">
+            <strong>Remember:</strong> Delete the example row before you send the template to us.
+          </div>
+        </section>
+       
+       
+        <!-- Section 5 -->
+        <section id="section-3">
+            <div class="step-header">
+          <h3>Map your multiple-choice questions</h3>
+          </div>
+          <div class="section-text">
+            <p>The Multiple-choice tab works similarly to Demographic questions, but here you also assign each question a number. Use the number that makes sense to you when you think about the order you'd analyse your questions — this is the number that will appear in Consult.</p>
+            <p class="callout">Categories need to a comma-separated list with no spaces before or after the commas. Not having spaces before or after commas is important as it can lead to duplicated categories.</p>
+          </div>
+       
+          <div class="gif-container">
+            <div class="gif-placeholder">Filling in the Multiple-choice tab — entering column reference, question number, and title</div>
+          </div>
+          <p class="caption">Here we see a multiple-choice question mapped with its column and title into the ‘Multiple Choice’ sheet of the Data Template file. Then a number is added, setting the order it appears in Consult.
+          </p>
+        </section>
+       
+       
+        <!-- Section 6 -->
+        <section id="section-3">
+            <div class="step-header">
+          <h3>Map your open questions</h3>
+          </div>
+          <div class="section-text">
+            <p>Open questions work the same way, with one important difference: the title you enter here is sent directly to the AI to help it identify themes. So don't just write a shorthand label — include the full question that was asked in your consultation. The AI needs that context to do its work well.</p>
+          </div>
+       
+          <div class="gif-container">
+            <div class="gif-placeholder">Filling in the Open questions tab, showing the difference between a bad title ("Why?") and a good title that includes the full question context</div>
+          </div>
+          <p class="caption">Here we see the title entered into the ‘Open Question’ sheet of the Data Template file.  This text is sent to the AI, so it’s important that the full question gives it the context it needs to identify the themes. A vague title, "Why?" needs to be replaced with the full question text. </p>
+       
+          <div class="callout">
+            <strong>This matters for AI quality:</strong> The title you write here is what the AI uses to understand the question. Always use the full question text, not a shorthand label.
+          </div>
+        </section>
+       
+       
+        <!-- Section 7 -->
+        <section id="section-3">
+            <div class="step-header">
+          <h3>Map your hybrid questions</h3>
+          </div>
+          <div class="section-text">
+            <p>Hybrid questions have both a multiple-choice and an open-text component, and you want them linked in the dashboard. On this tab, you'll enter the column for the open-text part, the question number, the title as you want it to appear, and the column ID of the multiple-choice part. This lets Consult combine them so they appear together.</p>
+          </div>
+       
+          <div class="gif-container">
+            <div class="gif-placeholder">Filling in the Hybrid tab — showing the open column, question number, title, and the closed/multiple-choice column ID being linked</div>
+          </div>
+          <p class="caption">Here we see the open-text column, question number, title and the closed/multiple-choice column ID being linked for a hybrid question so Consult shows both parts together. This is entered into the ‘Hybrid’ sheet of the Data Template file.</p>
+        </section>
+        <a href="#top" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>Back to top</a>
+
+        <hr class="section-divider">
+       
+       
+        <!-- Section 4 -->
+        <section id="section-4">
+            <div class="step-header">
+                <div class="number-circle">4</div>
+          <h2>Step 4: Review your data in the dashboard</h2>
+          </div>
+          <div class="section-text">
+            <p>Once you've sent us your raw data and completed template, we'll load it into Consult and email you to review it. You'll get access to a live version of the dashboard with your data — but without themes at this stage.</p> 
+            <p class="callout"> Take the time to check everything carefully before confirming, because changes after this point will require a fresh data upload.</p>
+            <h3>Step 4 check</h3>
+            <ul class="scope-list scope-list--does">
+              <li><svg class="scope-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#c0257f" stroke-width="1.5"/><polyline points="5,8.5 7,10.5 11,6" stroke="#c0257f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><strong>Demographic questions</strong> Are all the demographic filters showing? Are responses appearing correctly, or has a response been split across two rows (for example, because of a typo creating a duplicate)?</li>
+              <li><svg class="scope-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#c0257f" stroke-width="1.5"/><polyline points="5,8.5 7,10.5 11,6" stroke="#c0257f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><strong>Multiple-choice questions</strong> Is each question correct? Are all the response options present and accurate?</li>
+              <li><svg class="scope-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#c0257f" stroke-width="1.5"/><polyline points="5,8.5 7,10.5 11,6" stroke="#c0257f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><strong>All expected questions</strong> Has every question you're expecting appeared in the dashboard?</li>
+              <li><svg class="scope-icon" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="#c0257f" stroke-width="1.5"/><polyline points="5,8.5 7,10.5 11,6" stroke="#c0257f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><strong>Response data</strong> Go to the Response Analysis section to confirm you can see the actual responses for each question.</li>
+            </ul>
+            <p class="callout">If anything isn't right, correct it in your data, let us know what you've changed, and we'll re-upload it.</p>
+          </div>
+       
+          <div class="gif-container">
+            <img src="images/setupdata_review_dashboard.gif" alt="Walking through the review checklist in the live dashboard — checking demographic filters, multiple-choice options, verifying all questions are present, and viewing the Response Analysis section" /></div>
+          <p class="caption">Here we see the review checklist worked through in the live dashboard — checking demographic filters for splits, verifying multiple-choice options, confirming every question appears, then previewing responses in the Response Analysis section. There are no themes yet at this stage.
+          </p>
+        </section>
+        <a href="#top" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>Back to top</a>
+
+        <hr class="section-divider">
+       
+       
+        <!-- Section 4 -->
+        <section id="section-4">
+            <div class="step-header">
+                <div class="number-circle">4</div>
+          <h2>Step 4: Confirm your data is correct</h2></div>
+          <div class="section-text">
+            <p>Once you're satisfied that everything in the dashboard matches your consultation data, let the team know so they can proceed with generating themes.</p>
+          </div>
+       
+          <div class="confirm-box">
+            <p>Email <a href="mailto:consult@cabinetoffice.gov.uk">consult@cabinetoffice.gov.uk</a> to confirm your data is ready.</p>
+          </div>
+        </section>
+       
+      </article>
+
+      <nav class="phase-nav" aria-label="Phase navigation">
+        <a href="index.html" class="phase-nav__prev">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="10 3 5 8 10 13"/></svg>
+          <span><span class="phase-nav__label">Previous phase</span> Get started</span>
+        </a>
+        <a href="find.html" class="phase-nav__next">
+          <span><span class="phase-nav__label">Next phase</span> Find themes</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 3 11 8 6 13"/></svg>
+        </a>
+      </nav>
+
+      <div class="feedback-block">
+        <div class="feedback-prompt">
+          <span class="feedback-label">Was this helpful?</span>
+          <div class="feedback-buttons">
+            <button class="feedback-btn" id="btn-helpful" onclick="showFeedback('helpful')">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 10V17M3 11v5a1 1 0 001 1h10.17a2 2 0 001.94-1.515l1.4-5.6A2 2 0 0015.571 8H12V5a2 2 0 00-2-2h-.5a.5.5 0 00-.5.5V6L7 10z"/>
+              </svg>
+              It's helpful
+            </button>
+            <button class="feedback-btn" id="btn-missing" onclick="showFeedback('missing')">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 6h14M3 10h9"/>
+                <path d="M13 14.5l1.5-4.5 1.5 4.5M13.5 13h3"/>
+              </svg>
+              Something's missing
+            </button>
+          </div>
+        </div>
+
+        <div class="feedback-expanded" id="feedback-expanded" style="display:none">
+          <p class="feedback-question" id="feedback-question"></p>
+          <textarea class="feedback-textarea" id="feedback-textarea" rows="3"></textarea>
+          <button class="feedback-send" onclick="sendFeedback()">Send feedback</button>
+        </div>
+
+        <div class="feedback-thanks" id="feedback-thanks" style="display:none">
+          <span>Thanks for your feedback.</span>
+        </div>
+      </div>
+
+    </div>
+      </main>
+
+  <script>
+    function showFeedback(type) {
+      var q = document.getElementById('feedback-question');
+      var ta = document.getElementById('feedback-textarea');
+
+      document.getElementById('btn-helpful').classList.toggle('feedback-btn--active', type === 'helpful');
+      document.getElementById('btn-missing').classList.toggle('feedback-btn--active', type === 'missing');
+
+      if (type === 'helpful') {
+        q.textContent = "What's been the most useful part?";
+        ta.placeholder = 'eg the animations made it easy to relate to the tool...';
+      } else {
+        q.textContent = "What's missing or unclear? What would have helped you?";
+        ta.placeholder = 'eg step 2 missed out the part about...';
+      }
+
+      document.getElementById('feedback-expanded').style.display = 'flex';
+      document.getElementById('feedback-thanks').style.display = 'none';
+      ta.value = '';
+    }
+
+    function sendFeedback() {
+      document.getElementById('feedback-expanded').style.display = 'none';
+      document.getElementById('feedback-thanks').style.display = 'block';
+      document.getElementById('btn-helpful').classList.remove('feedback-btn--active');
+      document.getElementById('btn-missing').classList.remove('feedback-btn--active');
+    }
+  </script>
+
+</body>
+</html>

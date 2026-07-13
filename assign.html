@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Consult Header</title>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="test-banner">
+    This is a test site — information displayed may not be accurate.
+  </div>
+
+  <header class="header">
+
+    <!-- Left: brand + breadcrumb -->
+    <div class="header-left">
+
+      <a href="#" class="brand">
+        <img src="images/consult.svg" alt="Consult logo" class="brand-icon" />
+        <span class="brand-name">Consult</span>
+      </a>
+      <div class="divider"></div>
+
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <span class="breadcrumb-page">Example Consultation 2026</span>
+        <span class="breadcrumb-sep">/</span>
+        <span class="breadcrumb-current">Onboard</span>
+      </nav>
+
+    </div>
+
+    <!-- Right: nav links + avatar -->
+    <div class="header-right">
+
+      <a href="#" class="nav-link">Process</a>
+
+      <button class="nav-link" aria-haspopup="true">
+        Support
+        <svg class="chevron" viewBox="0 0 16 16">
+          <polyline points="4 6 8 10 12 6"/>
+        </svg>
+      </button>
+
+      <button class="nav-link" aria-haspopup="true">
+        Manage
+        <svg class="chevron" viewBox="0 0 16 16">
+          <polyline points="4 6 8 10 12 6"/>
+        </svg>
+      </button>
+
+      <div class="avatar" role="button" aria-label="User account" tabindex="0">
+        <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-7 8a7 7 0 1114 0H3z"/>
+        </svg>
+      </div>
+
+    </div>
+
+  </header>
+  <main class="main">
+    <div class="container">
+    <article class="help-page">
+ 
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          Consult <span>›</span> <a href="index.html" class="breadcrumb-page">Get started </a>  <span>›</span> <a href="index.html" class="breadcrumb-current">Assign themes</a> 
+        </nav>
+       
+        <!-- Page title -->
+        <h1>AI assigns themes to your responses</h1>
+       
+        <p class="intro">
+          Consult uses artificial intelligence (AI) to assign each open-text response to one or more of your confirmed themes.</p>
+       <p class="section-text">
+        To make sure the data is reliable, consult adds 2 options to each question, to make sure no response is left out of your analysis. </p>
+        <p class="section-text"> The two added themes are: </p>
+    <ul class="bullet-list">
+      <li><Strong>Other</Strong>  = responses the AI found didn't fit any of your finalised themes, but that may still be relevant. </li>
+      <li><Strong>No Reason Given</Strong> = responses the AI found that don't offer a viewpoint or information.</li>
+    </ul>
+    <p>We start this step once your team has finalised themes for all questions.</p>
+    <p class="callout">
+      This takes up to 48 hours, depending on the number of responses in your consultation. We will email you when the dashboard is ready for checking and review.
+ </p>
+ <hr class="section-divider">
+  <!-- Section 1 -->
+  <section id="section-1">
+    <div class="step-header">
+  <h2>How the AI assigns themes</h2>
+  </div>
+  <div class="section-text">
+    <p>The AI reads each open-text response and tags it with every theme that applies.
+    </p>
+    <p>A single response can have more than one theme. Longer answers often raise several points, so the AI doesn't force each response into one theme — it assigns all the themes that match.
+    </p>
+    <p>Every response in your consultation stays available to view. The AI has coded them to help you choose which responses to explore, and from which angle, when you analyse your data.
+    </p>
+    <h3>Other</h3>
+    <p>The 'Other' theme shows responses the AI found didn't fit any of your finalised themes, but that may still be relevant. This is where you might find a smaller theme worth exploring, or an outlier or individual viewpoint worth understanding. Other doesn't mean a response is irrelevant — only that it (or part of it) didn't align to the themes you chose.
+    </p>
+    <p>Responses can be assigned to both a specific theme AND ‘Other’. If a response matches one of the finalised themes and another idea / concept that doesn’t match any of the finalised themes, it can be assigned to both.
+    </p>
+    <h3>No Reason Given</h3>
+    <p>The 'No Reason Given' theme shows responses that don't offer a viewpoint or information. These may or may not still be relevant to understanding what your consultation is telling you. Other examples of responses are; 'no comment', 'as above' or an offensive response with no viewpoint.
+    </p>
+    <p class="callout">
+      Reviewing <strong>‘Other’</strong> and <strong>‘No Reason Given’ </strong> at Anaylse phase is important. They may surface issues raised that your theme framework doesn't capture.
+    </p>
+    </div>
+
+</section>
+      </article>
+
+      <nav class="phase-nav" aria-label="Phase navigation">
+        <a href="finalise.html" class="phase-nav__prev">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="10 3 5 8 10 13"/></svg>
+          <span><span class="phase-nav__label">Previous phase</span> Finalise themes</span>
+        </a>
+        <a href="check.html" class="phase-nav__next">
+          <span><span class="phase-nav__label">Next phase</span> Check quality</span>
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 3 11 8 6 13"/></svg>
+        </a>
+      </nav>
+
+      <div class="feedback-block">
+        <div class="feedback-prompt">
+          <span class="feedback-label">Was this helpful?</span>
+          <div class="feedback-buttons">
+            <button class="feedback-btn" id="btn-helpful" onclick="showFeedback('helpful')">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M7 10V17M3 11v5a1 1 0 001 1h10.17a2 2 0 001.94-1.515l1.4-5.6A2 2 0 0015.571 8H12V5a2 2 0 00-2-2h-.5a.5.5 0 00-.5.5V6L7 10z"/>
+              </svg>
+              It's helpful
+            </button>
+            <button class="feedback-btn" id="btn-missing" onclick="showFeedback('missing')">
+              <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M3 6h14M3 10h9"/>
+                <path d="M13 14.5l1.5-4.5 1.5 4.5M13.5 13h3"/>
+              </svg>
+              Something's missing
+            </button>
+          </div>
+        </div>
+
+        <div class="feedback-expanded" id="feedback-expanded" style="display:none">
+          <p class="feedback-question" id="feedback-question"></p>
+          <textarea class="feedback-textarea" id="feedback-textarea" rows="3"></textarea>
+          <button class="feedback-send" onclick="sendFeedback()">Send feedback</button>
+        </div>
+
+        <div class="feedback-thanks" id="feedback-thanks" style="display:none">
+          <span>Thanks for your feedback.</span>
+        </div>
+      </div>
+
+    </div>
+      </main>
+
+  <script>
+    function showFeedback(type) {
+      var q = document.getElementById('feedback-question');
+      var ta = document.getElementById('feedback-textarea');
+
+      document.getElementById('btn-helpful').classList.toggle('feedback-btn--active', type === 'helpful');
+      document.getElementById('btn-missing').classList.toggle('feedback-btn--active', type === 'missing');
+
+      if (type === 'helpful') {
+        q.textContent = "What's been the most useful part?";
+        ta.placeholder = 'eg the animations made it easy to relate to the tool...';
+      } else {
+        q.textContent = "What's missing or unclear? What would have helped you?";
+        ta.placeholder = 'eg step 2 missed out the part about...';
+      }
+
+      document.getElementById('feedback-expanded').style.display = 'flex';
+      document.getElementById('feedback-thanks').style.display = 'none';
+      ta.value = '';
+    }
+
+    function sendFeedback() {
+      document.getElementById('feedback-expanded').style.display = 'none';
+      document.getElementById('feedback-thanks').style.display = 'block';
+      document.getElementById('btn-helpful').classList.remove('feedback-btn--active');
+      document.getElementById('btn-missing').classList.remove('feedback-btn--active');
+    }
+  </script>
+
+</body>
+</html>
