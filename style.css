@@ -910,3 +910,118 @@
   color: #c0257f;
   text-decoration: underline;
 }
+
+/* ── User research prompt ──
+   Small, lightweight nudge to take part in user research.
+   Show either link, or both — just include/omit the <a> you want.
+   See the snippet variants in any page comment or the README. */
+.research-prompt {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  max-width: 840px;
+  background: #fdf2f8;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 28px 0;
+}
+
+.research-prompt__icon {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f7d0e8;
+  color: #c0257f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.research-prompt__icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+.research-prompt__text {
+  flex: 1 1 240px;
+  min-width: 0;
+}
+
+.research-prompt__title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+  font-family: 'Plus Jakarta Sans', Arial, sans-serif;
+  margin: 0 0 2px;
+}
+
+.research-prompt__desc {
+  font-size: 14px;
+  color: #6B7280;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.research-prompt__actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.research-prompt__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: inherit;
+  white-space: nowrap;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.research-prompt__btn svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+
+/* Primary action — book a session */
+.research-prompt__btn--book {
+  background: #c0257f;
+  color: #ffffff;
+  border: 1px solid #c0257f;
+}
+
+.research-prompt__btn--book:hover {
+  background: #a81e6e;
+  border-color: #a81e6e;
+}
+
+/* Secondary action — complete the survey */
+.research-prompt__btn--survey {
+  background: #ffffff;
+  color: #0F766E;
+  border: 1px solid #0D9488;
+}
+
+.research-prompt__btn--survey:hover {
+  background: #F0FDFA;
+}
+
+@media (max-width: 560px) {
+  .research-prompt__actions {
+    width: 100%;
+  }
+  .research-prompt__btn {
+    flex: 1 1 auto;
+    justify-content: center;
+  }
+}
