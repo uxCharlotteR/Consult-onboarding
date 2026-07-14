@@ -911,10 +911,7 @@
   text-decoration: underline;
 }
 
-/* ── User research prompt ──
-   Small, lightweight nudge to take part in user research.
-   Show either link, or both — just include/omit the <a> you want.
-   See the snippet variants in any page comment or the README. */
+/* ── User research prompt ── */
 .research-prompt {
   display: flex;
   align-items: center;
